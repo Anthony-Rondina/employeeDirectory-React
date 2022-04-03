@@ -1,38 +1,100 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
+  border: solid black 5px;
+  height: 100vh;
+  display: flex;
+  min-width: 300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homepage {
+  padding: 2px;
+  border: solid goldenrod 3px;
+  width: 100%;
+  min-width: 150px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.employeePage {
+  padding: 2px;
+  border: solid brown 3px;
+  width: 50%;
+  min-width: 150px;
+}
+header {
+  padding: 2px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: solid blue 3px;
+  height: 5%;
+  min-height: 50px;
+}
+.searchBar {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  border: solid green 2px;
+  height: 40px;
+  min-height: 40px;
+}
+.employeeList {
+  padding: 2px;
+  border: solid purple 3px;
+  height: 90%;
+  overflow: scroll;
+}
+input {
+  text-align: center;
+  border: solid grey;
+  border-radius: 4%;
+  width: 90%;
+  min-width: 90%;
+}
+.employeeCard {
+  margin-top: 2px;
+  min-width: 130px;
+  min-height: 80px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  word-wrap: break-all;
+  border: solid red 2px;
+  height: 10%;
+}
+.employeeInfo {
+  display: flex;
+  flex-direction: column;
+}
+.employeeName {
+  word-wrap: break-all;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.employeePhoto {
+  width: 15%;
+  border: solid orange 2px;
+  margin-right: 10px;
+}
+.image-cropper {
+  width: 75px;
+  min-width: 75px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+header > h1 {
+  min-width: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.employeePhoto > img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+.employeeTitle {
+  color: grey;
+  font-size: 0.8em;
 }
