@@ -5,8 +5,30 @@
   height: 100vh;
   display: flex;
   min-width: 300px;
+  width: 800px;
+  display: flex;
+  margin-left: 25%;
+  margin-right: 25%;
 }
-
+body {
+  margin: 0;
+}
+.showWrapper{
+  width: 100%;
+}
+.employeeNameBox{
+  display: flex;
+  border: solid gray 1px;
+  width: 500px;
+  margin-top: 50px;
+  padding: 10px;
+}
+.nameSecondBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
 .homepage {
   padding: 2px;
   border: solid goldenrod 3px;
@@ -38,11 +60,19 @@ header {
   height: 40px;
   min-height: 40px;
 }
+#floatBackButton {
+  position: relative;
+  right: 200px;
+  margin-right: -60px;
+}
 .employeeList {
   padding: 2px;
   border: solid purple 3px;
   height: 90%;
   overflow: scroll;
+}
+.headerTitle {
+  font-size: 2em;
 }
 input {
   text-align: center;
@@ -57,6 +87,7 @@ input {
   min-height: 80px;
   overflow: hidden;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   text-align: left;
   word-wrap: break-all;
@@ -64,13 +95,26 @@ input {
   height: 10%;
 }
 .employeeInfo {
+  /* border: solid blue 1px; */
+  width: 240px;
   display: flex;
   flex-direction: column;
 }
 .employeeName {
   word-wrap: break-all;
-  font-size: 1.1em;
+  font-size: 1.5em;
   font-weight: bold;
+}
+.big {
+  width: 170px;
+}
+.employeePageShow {
+  color: black;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 .employeePhoto {
   width: 15%;
@@ -81,6 +125,18 @@ input {
   width: 75px;
   min-width: 75px;
   height: 70px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.employeePhotoShow {
+  width: 70%;
+  border: solid orange 2px;
+  margin-right: 10px;
+}
+.image-cropperShow {
+  width: 175px;
+  min-width: 175px;
+  height: 170px;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -96,5 +152,5 @@ header > h1 {
 }
 .employeeTitle {
   color: grey;
-  font-size: 0.8em;
+  font-size: 1.2em;
 }

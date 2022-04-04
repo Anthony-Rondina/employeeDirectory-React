@@ -1,12 +1,22 @@
-import "./App.css";
+import './App.css'
+import { Route, Routes } from "react-router-dom";
+import EmployeePage from "./components/EmployeePage"
+import { useState } from "react";
+// import employeeArr from "./data";
+import EmployeeHomePage from './pages/EmployeeList';
+import Show from './pages/EmployeeList'
+export default function App (){
+  const [employeeInfo, setEmployeeInfo] = useState({})
 
-import HomePage from "./components/HomePage";
-
-export default function App() {
+  const getEmployee = (data) => {
+    setEmployeeInfo(data)
+  }
   return (
-    <div className="App">
-      <HomePage />
-      {/* <div className="employeePage"></div> */}
-    </div>
-  );
+      <div className="App">
+          <Routes>
+              <Route path="/" element={<EmployeeHomePage getInfo = {getEmployee} />}/>
+              <Route path="/:id" element={<EmployeePage info={employeeInfo}/>}/>
+          </Routes>
+      </div>
+  )
 }

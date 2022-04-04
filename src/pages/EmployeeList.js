@@ -1,10 +1,10 @@
-import Header from "./Header";
-import SearchBar from "./SearchBar";
-import EmployeeList from "./EmployeeList";
+import Header from "../components/Header";
+import SearchBar from "../components/SearchBar";
+import EmployeeList from "../components/EmployeeList";
 import employeeArr from "../data";
-import EmployeeListItem from "./EmployeeListItem";
+import EmployeeListItem from "../components/EmployeeListItem";
 // import {Link} from "react-router-dom"
-export default function HomePage(props) {
+export default function EmployeeHomePage(props) {
   return (
     <div className="homepage">
       <Header title="Employee List" />

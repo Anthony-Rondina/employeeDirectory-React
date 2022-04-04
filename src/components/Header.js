@@ -1,7 +1,9 @@
-export default function Header({title}) {
+import {Link} from "react-router-dom"
+export default function Header(props) {
     return (
       <header>
-        <h3>{title}</h3>
+        {props.back ? <Link id="floatBackButton" to={`/`}>Back</Link> : ''}
+        <h3 className="headerTitle">{props.title}</h3>
       </header>
     );
   }
