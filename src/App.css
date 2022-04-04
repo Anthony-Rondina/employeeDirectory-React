@@ -7,8 +7,8 @@
   min-width: 300px;
   width: 800px;
   display: flex;
-  margin-left: 25%;
-  margin-right: 25%;
+  /* margin-left: 25%;
+  margin-right: 25%; */
 }
 body {
   margin: 0;
@@ -16,12 +16,30 @@ body {
 .showWrapper{
   width: 100%;
 }
+.showBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid gray 1px;
+  width: 500px;
+  height: 100px;
+  padding: 30px;
+  text-align: left;
+}
 .employeeNameBox{
   display: flex;
   border: solid gray 1px;
   width: 500px;
   margin-top: 50px;
-  padding: 10px;
+  padding: 30px;
+}
+.showTop {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.showBottom{
+  margin-top: -20px;
+  color: gray;
 }
 .nameSecondBox{
   display: flex;
@@ -63,7 +81,10 @@ header {
 #floatBackButton {
   position: relative;
   right: 200px;
+  font-size: 1.5em;
   margin-right: -60px;
+  text-decoration: none;
+  color: blue;
 }
 .employeeList {
   padding: 2px;
@@ -107,6 +128,10 @@ input {
 }
 .big {
   width: 170px;
+}
+.showInfo {
+  display: flex;
+  flex-direction: column;
 }
 .employeePageShow {
   color: black;
